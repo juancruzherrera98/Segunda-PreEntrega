@@ -1,39 +1,13 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-.flex {
-    display: flex;
-    justify-content: center;
-}
-
-
-.btn {
-    background-color: whitesmoke;
-    color: aliceblue;
-    font-size: 18px;
-    border: 2px solid transparent;
-}
-
-.btn:hover {
-    border: 2px solid transparent;
-    color: fuchsia;
-}
-
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
+/*Estilos para el menu de inicio*/
 .menu {
     flex-grow: 0;
-    
 }
 
 .menu .menu-ul{
@@ -49,7 +23,7 @@
 }
 
 .menu ul li a:hover {
-    color: fuchsia;
+    color: pink;
     text-decoration: none;
 }
 
@@ -70,6 +44,8 @@
 .padding-0{
     padding: 0;
 }
+
+/*Media queria para dispositivos de menos de 991px*/
 @media  screen and (max-width: 991px) {
     .menu{
         position: absolute;
@@ -77,7 +53,6 @@
         background-color: #6B818C;
         width: 100%;
         z-index: 1000;
-
     }
 }
 
@@ -87,7 +62,7 @@
 }
 
 .color-back {
-    background-color: #191919;
+    /*background-color: #191919;*/
     color: aliceblue;
     display: flex;
     flex-direction: row;
@@ -96,7 +71,7 @@
 @media  screen and (max-width: 991px) {
     .color-back {
         position: absolute;
-        background-color: #191919;
+        /*background-color: #191919;*/
         width: 100%;
         flex-direction: column;
         padding: 0;
@@ -110,6 +85,7 @@
     
 }
 
+/* Carrousel x3 */
 .carrousel-left {
     display: flex;
     flex-direction: column;
@@ -117,8 +93,6 @@
     text-align: left;
     padding: 1%;
 }
-
-
 
 .carrousel-center {
     display: flex;
@@ -128,7 +102,6 @@
     padding: 1%;
 }
 
-
 .carrousel-right {
     display: flex;
     flex-direction: column;
@@ -137,19 +110,19 @@
     padding: 1%;
 }
 
+/*Modificaciones para el main de la pagina stock.html */
 .main-stock {
     align-items: center;
     background-color: #6B818C;
 }
 
-
+/*Grid correspondiente a la pagina stock.html */
 .grid-galeria {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 300px);
     padding-right: 100px;
-        padding-bottom: 40px;
-
+    padding-bottom: 40px;
 }
 
 .grid-galeria img {
@@ -209,9 +182,11 @@ h1 {
     margin: 20px;
 }
 
+
+/*Tarjetas de la pagina nosotros.html */
 .card {
     width: 350px;
-    height: 500px;
+    height: 550px;
     border-radius: 20px 0px;
     overflow: hidden;
     box-shadow: 10px 12px 28px 0px rgba(0,0,0,0.75);
@@ -241,6 +216,7 @@ h1 {
 
 }
 
+/*Footer comun a todos los html */
 footer {
     
     width: 100%;
