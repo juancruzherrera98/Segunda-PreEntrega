@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn {
+    background-color: whitesmoke;
+    color: aliceblue;
+    font-size: 18px;
+    border: 2px solid transparent;
+}
+
+.btn:hover {
+    border: 2px solid transparent;
+    color: fuchsia;
+}
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.menu {
+    flex-grow: 0;
+    
+}
+
+.menu .menu-ul{
+    column-gap: 10px;
+    align-items: center;
+}
+
+.menu ul li a {
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+.menu ul li a:hover {
+    color: fuchsia;
+    text-decoration: none;
+}
+
+.menu-icon {
+    background-image: url(./../img/logomms.png);
+}
+
+.menu-button {
+    border: none;
+    transform: scale(2);
+    padding-right: 3rem;
+}
+
+.menu-button:focus{
+    box-shadow: none;
+}
+
+.padding-0{
+    padding: 0;
+}
+@media  screen and (max-width: 991px) {
+    .menu{
+        position: absolute;
+        top: 125px;
+        background-color: #6B818C;
+        width: 100%;
+        z-index: 1000;
+
+    }
+}
+
+.color-back-nav {
+    background-color: #35605A;
+    
+}
+
+.color-back {
+    background-color: #191919;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media  screen and (max-width: 991px) {
+    .color-back {
+        position: absolute;
+        background-color: #191919;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+    .carrousel-left,
+    .carrousel-center,
+    .carrousel-right {
+    width: 100%;
+    }
+    
+}
+
+.carrousel-left {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 1%;
+}
+
+
+
+.carrousel-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+}
+
+
+.carrousel-right {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: center;
+    padding: 1%;
+}
+
+.main-stock {
+    align-items: center;
+    background-color: #6B818C;
+}
+
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 300px);
+    padding-right: 100px;
+        padding-bottom: 40px;
+
+}
+
+.grid-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 1rem 3rem 3rem 3rem;
+    gap: 1rem;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 30vh);
+        padding-right: 100px;
+        padding-bottom: 40px;
+        /* grid-template-a reas:
+        "img1 img2"
+        "img3 img3"
+        "img4 img5";*/
+    }
+    
+
+/*    .img1{
+        grid-area: img1;
+    }
+    .img2{
+        grid-area: img2;
+    }
+    .img3{
+        grid-area: img3;
+    }
+    .img4{
+        grid-area: img4;
+    }
+    */
+}
+
+/*Media query Desktop - (entre 1024px - 1200px) */
+@media screen and (min-width: 1024px) {
+    .grid-galeria {
+        
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 30vh);
+        padding-bottom: 40px;
+        
+        /* grid-template-areas: 
+        "img1 img2 img3"
+        "img1 img4 img4"
+        "img5 img5 img5";*/ 
+    }
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px 0px;
+    overflow: hidden;
+    box-shadow: 10px 12px 28px 0px rgba(0,0,0,0.75);
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+}
+
+.contenedor-destacados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 25px;
+    padding: 25px;
+}
+
+.card-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 180px;
+    padding: 10px;
+
+}
+
+footer {
+    
+    width: 100%;
+    padding: 2rem;
+    background-color: #35605A;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    text-align: left;
+}
+
+footer p a {
+    text-decoration: none;
+    color: pink;
+}
+
+@media screen and (max-width: 991px) {
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0; 
+        width: 100%;
+        background-color: #35605A; /* o el color que quieras */
+        padding: 1rem; /* Añade el padding deseado */
+        text-align: center;
+    }
+}
+
