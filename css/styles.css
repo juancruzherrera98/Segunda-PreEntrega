@@ -1,11 +1,13 @@
-/* Reset */
+/* Reset 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+*/
 
 /*Estilos para el menu de inicio*/
+/*
 .menu {
     flex-grow: 0;
 }
@@ -44,7 +46,7 @@
 .padding-0{
     padding: 0;
 }
-
+*/
 /*Media queria para dispositivos de menos de 991px*/
 @media  screen and (max-width: 991px) {
     .menu{
@@ -55,19 +57,22 @@
         z-index: 1000;
     }
 }
-
+/*
 .color-back-nav {
     background-color: #35605A;
     
 }
+*/
 
-.color-back {
-    /*background-color: #191919;*/
+/*.color-back {
+    /*background-color: #191919;*
     color: aliceblue;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+}*/
+
+
 @media  screen and (max-width: 991px) {
     .color-back {
         position: absolute;
@@ -81,11 +86,10 @@
     .carrousel-center,
     .carrousel-right {
     width: 100%;
-    }
-    
+    }   
 }
 
-/* Carrousel x3 */
+/* Carrousel x3
 .carrousel-left {
     display: flex;
     flex-direction: column;
@@ -109,6 +113,8 @@
     text-align: center;
     padding: 1%;
 }
+
+*/
 
 /*Modificaciones para el main de la pagina stock.html */
 .main-stock {
@@ -176,14 +182,15 @@
         "img5 img5 img5";*/ 
     }
 }
-
+/*
 h1 {
     text-align: center;
     margin: 20px;
-}
+}*/
 
 
 /*Tarjetas de la pagina nosotros.html */
+/*
 .card {
     width: 350px;
     height: 550px;
@@ -215,9 +222,9 @@ h1 {
     padding: 10px;
 
 }
-
+*/
 /*Footer comun a todos los html */
-footer {
+/*footer {
     
     width: 100%;
     padding: 2rem;
@@ -236,14 +243,12 @@ footer p a {
 }
 
 @media screen and (max-width: 991px) {
-    .footer {
-        position: fixed;
+    footer {
+        position: relative;
         bottom: 0;
-        left: 0; 
         width: 100%;
-        background-color: #35605A; /* o el color que quieras */
-        padding: 1rem; /* Añade el padding deseado */
-        text-align: center;
+        background-color: #35605A; /* o el color que quieras
+        padding: 1rem;
     }
-}
+} */
 

@@ -1,0 +1,28 @@
+/*Footer comun a todos los html */
+footer {
+    
+    width: 100%;
+    padding: 2rem;
+    background-color: #35605A;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    text-align: left;
+}
+
+footer p a {
+    text-decoration: none;
+    color: pink;
+}
+
+@media screen and (max-width: 991px) {
+    footer {
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        background-color: #35605A; /* o el color que quieras */
+        padding: 1rem; /* Añade el padding deseado */
+    }
+}

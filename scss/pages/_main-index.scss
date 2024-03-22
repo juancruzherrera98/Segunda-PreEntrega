@@ -1,0 +1,32 @@
+.color-back {
+    /*background-color: #191919;*/
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Carrousel x3 */
+.carrousel-left {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    padding: 1%;
+}
+
+.carrousel-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+}
+
+.carrousel-right {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: center;
+    padding: 1%;
+}

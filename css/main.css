@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color-back-nav {
+  background-color: #35605A;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+/*Estilos para el menu de inicio*/
+header nav .color-back-nav {
+  background-color: #35605A;
+}
+header nav .padding-0 {
+  padding: 0;
+}
+header nav .menu-button {
+  border: none;
+  transform: scale(2);
+  padding-right: 3rem;
+}
+header nav .menu-button:focus {
+  box-shadow: none;
+}
+header nav .menu-icon {
+  background-image: url(./../img/logomms.png);
+}
+header nav .menu-ul {
+  column-gap: 10px;
+  align-items: center;
+}
+header nav .menu {
+  flex-grow: 0;
+  column-gap: 10px;
+  align-items: center;
+  color: whitesmoke;
+  font-size: 18px;
+  text-decoration: none;
+}
+header nav .menu:hover {
+  color: pink;
+  text-decoration: none;
+}
+
+.color-back {
+  /*background-color: #191919;*/
+  color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Carrousel x3 */
+.carrousel-left {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  padding: 1%;
+}
+
+.carrousel-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1%;
+}
+
+.carrousel-right {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  text-align: center;
+  padding: 1%;
+}
+
+/*Footer comun a todos los html */
+footer {
+  width: 100%;
+  padding: 2rem;
+  background-color: #35605A;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+  text-align: left;
+}
+
+footer p a {
+  text-decoration: none;
+  color: pink;
+}
+
+@media screen and (max-width: 991px) {
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #35605A; /* o el color que quieras */
+    padding: 1rem; /* Añade el padding deseado */
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

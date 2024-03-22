@@ -1,0 +1,39 @@
+/*Estilos para el menu de inicio*/
+
+header{
+    nav{
+        .color-back-nav{
+            background-color: #35605A;
+        }
+        .padding-0{
+            padding: 0;
+        }
+        .menu-button{
+            border: none;
+            transform: scale(2);
+            padding-right: 3rem;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        .menu-icon{
+            background-image: url(./../img/logomms.png);
+        }
+        .menu-ul{
+            column-gap: 10px;
+            align-items: center;
+        }
+        .menu{
+                flex-grow: 0;  
+                column-gap: 10px;
+                align-items: center;
+                color: whitesmoke;
+                font-size: 18px;
+                text-decoration: none;
+                &:hover{
+                    color: pink;
+                    text-decoration: none;
+                }
+        }
+    }
+}
